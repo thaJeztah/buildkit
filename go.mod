@@ -18,9 +18,9 @@ require (
 	github.com/coreos/go-systemd/v22 v22.1.0
 	github.com/docker/cli v20.10.7+incompatible
 	github.com/docker/distribution v2.7.1+incompatible
+	// docker: the actual version is replaced in replace()
 	github.com/docker/docker v20.10.7+incompatible
 	github.com/docker/go-connections v0.4.0
-	github.com/docker/libnetwork v0.8.0-dev.2.0.20210525090646-64b7a4574d14
 	github.com/gofrs/flock v0.7.3
 	github.com/gogo/googleapis v1.4.0
 	github.com/gogo/protobuf v1.3.2
@@ -61,7 +61,7 @@ require (
 	golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
 	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20210324051608-47abb6519492
+	golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
 	// genproto: the actual version is replaced in replace()
 	google.golang.org/genproto v0.0.0-20201110150050-8816d57aaa9a
@@ -70,6 +70,8 @@ require (
 )
 
 replace (
+	// master / v21.xx-dev (after libnetwork integration)
+	github.com/docker/docker => github.com/docker/docker v20.10.3-0.20210605150135-8dbd90ec00da+incompatible
 	// protobuf: corresponds to containerd
 	github.com/golang/protobuf => github.com/golang/protobuf v1.3.5
 	github.com/hashicorp/go-immutable-radix => github.com/tonistiigi/go-immutable-radix v0.0.0-20170803185627-826af9ccf0fe
