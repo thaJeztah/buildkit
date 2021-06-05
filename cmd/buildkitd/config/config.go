@@ -1,6 +1,9 @@
 package config
 
-import "github.com/BurntSushi/toml"
+import (
+	"github.com/BurntSushi/toml"
+	"github.com/moby/buildkit/util/resolver"
+)
 
 // Config provides containerd configuration data for the server
 type Config struct {
@@ -9,7 +12,7 @@ type Config struct {
 	// Root is the path to a directory where buildkit will store persistent data
 	Root string `toml:"root"`
 
-	//Entitlements e.g. security.insecure, network.host
+	// Entitlements e.g. security.insecure, network.host
 	Entitlements []string `toml:"insecure-entitlements"`
 	// GRPC configuration settings
 	GRPC GRPCConfig `toml:"grpc"`
@@ -35,19 +38,8 @@ type GRPCConfig struct {
 	// MaxSendMsgSize int    `toml:"max_send_message_size"`
 }
 
-type RegistryConfig struct {
-	Mirrors      []string     `toml:"mirrors"`
-	PlainHTTP    *bool        `toml:"http"`
-	Insecure     *bool        `toml:"insecure"`
-	RootCAs      []string     `toml:"ca"`
-	KeyPairs     []TLSKeyPair `toml:"keypair"`
-	TLSConfigDir []string     `toml:"tlsconfigdir"`
-}
-
-type TLSKeyPair struct {
-	Key         string `toml:"key"`
-	Certificate string `toml:"cert"`
-}
+type RegistryConfig = resolver.RegistryConfig
+type TLSKeyPair = resolver.TLSKeyPair
 
 type TLSConfig struct {
 	Cert string `toml:"cert"`
