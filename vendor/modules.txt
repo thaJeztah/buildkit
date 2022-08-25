@@ -580,8 +580,8 @@ github.com/opencontainers/selinux/pkg/pwalkdir
 # github.com/pelletier/go-toml v1.9.4
 ## explicit; go 1.12
 github.com/pelletier/go-toml
-# github.com/pkg/browser v0.0.0-20210115035449-ce105d075bb4
-## explicit; go 1.14
+# github.com/pkg/browser v0.0.0-20210115035449-ce105d075bb4 => ./.nobrowser
+## explicit; go 1.18
 github.com/pkg/browser
 # github.com/pkg/errors v0.9.1
 ## explicit
@@ -879,3 +879,4 @@ google.golang.org/protobuf/types/known/wrapperspb
 ## explicit
 gopkg.in/yaml.v3
 # github.com/docker/docker => github.com/docker/docker v20.10.3-0.20220414164044-61404de7df1a+incompatible
+# github.com/pkg/browser => ./.nobrowser
