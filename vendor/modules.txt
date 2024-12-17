@@ -482,7 +482,7 @@ github.com/docker/cli/cli/config/configfile
 github.com/docker/cli/cli/config/credentials
 github.com/docker/cli/cli/config/types
 github.com/docker/cli/cli/connhelper/commandconn
-# github.com/docker/docker v27.5.0+incompatible
+# github.com/docker/docker v27.5.0+incompatible => github.com/docker/docker v27.0.2-0.20250118005005-b28d13040d7b+incompatible
 ## explicit
 github.com/docker/docker/api
 github.com/docker/docker/api/types
@@ -495,6 +495,7 @@ github.com/docker/docker/api/types/image
 github.com/docker/docker/api/types/mount
 github.com/docker/docker/api/types/network
 github.com/docker/docker/api/types/registry
+github.com/docker/docker/api/types/storage
 github.com/docker/docker/api/types/strslice
 github.com/docker/docker/api/types/swarm
 github.com/docker/docker/api/types/swarm/runtime
@@ -504,17 +505,16 @@ github.com/docker/docker/api/types/versions
 github.com/docker/docker/api/types/volume
 github.com/docker/docker/client
 github.com/docker/docker/errdefs
+github.com/docker/docker/internal/lazyregexp
 github.com/docker/docker/internal/mounttree
 github.com/docker/docker/internal/multierror
 github.com/docker/docker/internal/unshare
 github.com/docker/docker/libnetwork/internal/resolvconf
 github.com/docker/docker/libnetwork/resolvconf
 github.com/docker/docker/pkg/archive
+github.com/docker/docker/pkg/atomicwriter
 github.com/docker/docker/pkg/chrootarchive
 github.com/docker/docker/pkg/idtools
-github.com/docker/docker/pkg/ioutils
-github.com/docker/docker/pkg/pools
-github.com/docker/docker/pkg/system
 github.com/docker/docker/profiles/seccomp
 # github.com/docker/docker-credential-helpers v0.8.2
 ## explicit; go 1.19
@@ -1140,3 +1140,4 @@ tags.cncf.io/container-device-interface/pkg/parser
 # tags.cncf.io/container-device-interface/specs-go v0.8.0
 ## explicit; go 1.19
 tags.cncf.io/container-device-interface/specs-go
+# github.com/docker/docker => github.com/docker/docker v27.0.2-0.20250118005005-b28d13040d7b+incompatible

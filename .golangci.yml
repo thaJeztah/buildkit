@@ -128,3 +128,7 @@ issues:
     - linters:
         - revive
       text: "if-return"
+    # FIXME temporarily suppress these, as we need to decide if they need to stay deprecated, or moved elsewhere.
+    - text: "SA1019: (idtools)\\.(SeTakeOwnershipPrivilege|ContainerAdministratorSidString|ContainerUserSidString) is deprecated"
+      linters:
+        - staticcheck
