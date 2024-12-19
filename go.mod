@@ -5,6 +5,8 @@ go 1.22.0
 // FIXME(thaJeztah): testing moby master
 replace github.com/docker/docker => github.com/docker/docker v27.0.2-0.20241223115700-a72026acbbdf+incompatible
 
+replace github.com/docker/cli => github.com/docker/cli v27.0.2-0.20241223130549-3b49deb8fcce+incompatible
+
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.6.0
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v0.4.1
