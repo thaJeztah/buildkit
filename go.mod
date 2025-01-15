@@ -1,6 +1,6 @@
 module github.com/moby/buildkit
 
-go 1.22.0
+go 1.22.7
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.6.0
@@ -25,8 +25,8 @@ require (
 	github.com/containerd/log v0.1.0
 	github.com/containerd/nydus-snapshotter v0.15.0
 	github.com/containerd/platforms v1.0.0-rc.1
-	github.com/containerd/stargz-snapshotter v0.16.3
-	github.com/containerd/stargz-snapshotter/estargz v0.16.3
+	github.com/containerd/stargz-snapshotter v0.16.2-0.20250115022124-8c9ecb7cd338
+	github.com/containerd/stargz-snapshotter/estargz v0.16.2-0.20250115022124-8c9ecb7cd338
 	github.com/containerd/typeurl/v2 v2.2.3
 	github.com/containernetworking/plugins v1.5.1
 	github.com/coreos/go-systemd/v22 v22.5.0
@@ -155,7 +155,7 @@ require (
 	github.com/google/pprof v0.0.0-20240424215950-a892ee059fd6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.22.0 // indirect
-	github.com/hanwen/go-fuse/v2 v2.6.3 // indirect
+	github.com/hanwen/go-fuse/v2 v2.7.2 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.7 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
